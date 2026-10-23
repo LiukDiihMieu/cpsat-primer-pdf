@@ -125,8 +125,13 @@ jobs:
           UPSTREAM_COMMIT: ${{ needs.build.outputs.upstream_commit }}
         run: |
           cd release
+          BUILD_DATE=$(python3 -c 'import json; print(json.load(open("build-info.json"))["built_at"][:10])')
+          UPSTREAM_DATE=$(python3 -c 'import json; print(json.load(open("build-info.json"))["upstream_commit_date"])')
           cat > release-notes.md <<EOF
           Unofficial US Letter PDF edition of **The CP-SAT Primer** by Dominik Krupke and contributors.
+
+          PDF build date: $BUILD_DATE (UTC).
+          Upstream revision date: $UPSTREAM_DATE.
 
           Upstream source: [$UPSTREAM_COMMIT](https://github.com/d-krupke/cpsat-primer/commit/$UPSTREAM_COMMIT).
 
@@ -134,6 +139,6 @@ jobs:
           Build provenance and automated audit results are attached.
           EOF
           gh release create "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" \
-            --target "$GITHUB_SHA" --latest --title 'The CP-SAT Primer - Letter PDF' \
+            --target "$GITHUB_SHA" --latest --title "The CP-SAT Primer — Letter PDF · $BUILD_DATE" \
             --notes-file release-notes.md \
             cpsat-primer-letter.pdf build-info.json audit.json NOTICE.md licenses.zip
