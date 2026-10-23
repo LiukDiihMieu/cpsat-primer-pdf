@@ -1,0 +1,12 @@
+{
+  "mdbook": {
+    "version": "0.5.4",
+    "url": "https://github.com/rust-lang/mdBook/releases/download/v0.5.4/mdbook-v0.5.4-x86_64-unknown-linux-gnu.tar.gz",
+    "sha256": "3f28de05dafca9d0f2eab99c662116b0e37b89b1d96a08f8f430b9eeae958cd7"
+  },
+  "mathjax": {
+    "version": "2.7.9",
+    "url": "https://registry.npmjs.org/mathjax/-/mathjax-2.7.9.tgz",
+    "sha256": "7131e739848edc14aa661a5516995866b81a477fab8b039d7cc324930e71f786"
+  }
+}

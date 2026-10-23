@@ -1,0 +1,14 @@
+{
+  "https://img.shields.io/badge/Open-CP--SAT%20Log%20Analyzer-brightgreen?style=for-the-badge": {
+    "sha256": "442db69c4709311f1b6f8ee082603b38e4e4ccf85aafca0ef2a826f59de5b897",
+    "path": "assets/external/log-analyzer.svg"
+  },
+  "https://img.shields.io/badge/d--krupke-CP--SAT%20Log%20Analyzer-blue?style=for-the-badge&logo=github": {
+    "sha256": "027b0b083758a6bc37446bb9819c7b5d2f4494850a2d3eb6844b4a60386b55a9",
+    "path": "assets/external/log-analyzer-source.svg"
+  },
+  "https://imgs.xkcd.com/comics/fuck_grapefruit.png": {
+    "sha256": "354c9e7057ce33f13fbae0bf00361dc0ea9603a96400c28ce4ae4f370c4667b8",
+    "path": "assets/external/xkcd-fuck-grapefruit.png"
+  }
+}

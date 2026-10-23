@@ -1,0 +1,30 @@
+/* Print controls specific to the complete edition. */
+.chapter { break-before:page; }
+.part-title { font-size:15pt; color:#526a7c; margin:0 0 1.3em; bookmark-level:1; string-set:none; }
+.chapter-title { font-size:24pt; margin:0 0 0.8em; string-set:chapter content(text); bookmark-level:2; }
+.chapter h3 { font-size:15pt; }
+.chapter h4 { font-size:12pt; }
+.chapter h5,.chapter h6 { font-size:11pt; }
+.full-toc { font-size:10pt; line-height:1.35; }
+.full-toc a { padding:0.12em 0; }
+.full-toc .toc-part { margin:1.05em 0 0.4em; font-size:11pt; font-weight:700; break-after:avoid; }
+.full-toc .toc-part a::after {content:none;}
+.toc-chapter { font-weight:600; margin-top:0.4em; break-after:avoid; }
+.toc-section { margin-left:1.4em; font-size:9pt; }
+.full-toc a { orphans:2; widows:2; }
+.snapshot-hash { font-family:monospace; font-size:7pt; overflow-wrap:anywhere; }
+figure { margin:1em 0; break-inside:avoid; }
+figure img { display:block; margin:auto; max-height:6.5in; }
+figcaption { font-size:9pt; line-height:1.35; margin-top:0.6em; }
+.callout td > div[style*="display: flex"] { column-gap:0.7em; }
+.callout { break-inside:avoid; }
+.table-wrapper { overflow:visible; }
+pre { break-inside:auto; }
+thead { display:table-header-group; }
+.MathJax_SVG { max-width:100%; }
+.MathJax_SVG_Display > .MathJax_SVG { display:block !important; width:100%; }
+img.math-svg { height:auto !important; max-width:100%; }
+.companion img:not(.math-svg) { max-height:3.2in; width:auto; }
+.workers-table { table-layout:fixed; font-size:8pt; }
+.workers-table code { font-size:7pt; }
+.workers-table th:first-child { overflow-wrap:normal; }
